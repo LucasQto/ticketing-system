@@ -1,0 +1,12 @@
+services:
+  mysql:
+  ##mariadb:
+    image: 'mysql:8.0.32'
+    ##image: 'mariadb:10.5'
+    environment:
+      - 'MYSQL_DATABASE=ticketingDB'
+      - 'MYSQL_PASSWORD=teste'
+      - 'MYSQL_ROOT_PASSWORD=teste'
+      - 'MYSQL_USER=lucaixx'
+    ports:
+      - '3306:3306'
